@@ -1,0 +1,68 @@
+#pestoPhoto
+    margin-bottom: 70px
+#pestoPhoto *
+    font-size: 0
+.pestoPhotoBox
+    height: 600px
+    position: relative
+    overflow: hidden
+
+.pestoPhotoUnitGoDown, .pestoPhotoUnitGoUp
+    width: 100%
+    display: inline-flex
+    // height: 50%
+
+.pestoPhotoCard1
+    background-image: url('../img/gallery-masonry-1-640x429.jpg')
+.pestoPhotoCard2
+    background-image: url('../img/gallery-masonry-2-640x429.jpg')
+.pestoPhotoCard3
+    background-image: url('../img/gallery-masonry-3-640x429.jpg')
+.pestoPhotoCard4
+    background-image: url('../img/gallery-masonry-4-960x429.jpg')
+.pestoPhotoCard5
+    background-image: url('../img/gallery-masonry-5-960x429.jpg')
+.pestoCards
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+    // max-height: 200px
+
+.pestoPhotoUnitGoDown .pestoCards
+    width: 34%
+    height: 100%
+
+    // min-height: 300px
+
+.pestoPhotoUnitGoUp .pestoCards
+    width: 50%
+    height: 100%
+
+
+.pestoPhotoUnitGoDown
+    display: inline-flex
+    justify-content: space-between
+    height: 100%
+
+    
+.pestoPhotoUnitGoUp
+    display: inline-flex
+    justify-content: space-between
+    height: 100%
+
+.pestoPhotoUnitCellF
+    display: none
+    height: 50%
+    
+.pestoPhotoUnitCellS
+    display: none
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 50%
+.pestoPhotoUnitGoDown .pestoCards
+    transition: width 0.5s cubic-bezier(0.57, -0.14, 0.61, 0.84), height 0.5s cubic-bezier(0.57, -0.14, 0.61, 0.84)
+.pestoPhotoUnitGoUp .pestoCards
+    transition: width 0.5s cubic-bezier(0.57, -0.14, 0.61, 0.84), height 0.5s cubic-bezier(0.57, -0.14, 0.61, 0.84)
+
+
